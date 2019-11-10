@@ -220,7 +220,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1665253152}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c504a52893099f445ad3b828b809bc40, type: 3}
+  m_Script: {fileID: 11500000, guid: d4c231d71e9b8e44b8bb2d14ee279f6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   First_Spawn: 0.5
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2090693511}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35b3dfed36797e2479c62eb8e6da19b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 36b389bc4069da84481d73fed655971b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gestures:
