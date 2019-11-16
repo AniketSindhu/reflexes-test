@@ -4,10 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class flags : MonoBehaviour
 {   
+    public static bool isdead=false;
     public static int score=0;
    public float initialspeed=3.5f;
    public float speed=0f;
    float multiplier=0.1f;
+
+   
     void Update()
     {   speed=initialspeed+score*multiplier;
         transform.Translate(Vector2.left*speed*Time.deltaTime);
@@ -16,7 +19,7 @@ public class flags : MonoBehaviour
         {    
          if (other.CompareTag("Player"))
         {Debug.Log(score);
-        SceneManager.LoadScene(2);
+        isdead=true;
         speed=0f;
         }
         else if(other.tag==gameObject.tag)
@@ -30,8 +33,9 @@ public class flags : MonoBehaviour
         else
         {
             Debug.Log(score);           
-            SceneManager.LoadScene("Gameover");
+           
             speed=0f;
+            isdead=true;
         }
         
     
